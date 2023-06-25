@@ -44,13 +44,14 @@ body {
 .navbar a {
     color: #fff;
     font-size: 1.8rem;
-    
+
 }
 
 .navbar a:hover {
     color: var(--main-color);
 }
- .container-fluid .navbar-brand i{
+
+.container-fluid .navbar-brand i {
     padding: 0 .5rem;
 }
 
@@ -64,7 +65,7 @@ body {
     color: var(--main-color);
 }
 
-.carousel-size{
+.carousel-size {
     height: 25vw;
     width: 40vw;
     background-size: cover;
@@ -166,7 +167,7 @@ footer {
 
 }
 
-.main_content{
+.main_content {
     width: 100%;
 
 
@@ -301,35 +302,62 @@ sup {
         height: auto;
         margin-top: 3rem;
     }
+
+
 }
 
-@media (max-width:600px){
+@media (max-width:760px) {
+    .carousel-size {
+        height: 60vw;
+        width: 85vw;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .main_header_right {
+        align-items: center;
+    }
+
+}
+
+@media (max-width:600px) {
 
     .main_content {
-        width: 140%;
-        font-size: 2rem;
+        width: 100%;
+        font-size: 1rem;
     }
-    .temp_form input[type="submit"]{
-        padding: 2.6rem 2rem 2rem 2rem;
+
+    .temp_form input[type="submit"] {
+        padding: 1.5rem 2rem 1.5rem 2rem;
+      
     }
-   .temp_form input[type="text"]{
-    font-size: 2rem;
-    font-weight: 600;
-    color: #fff;
-   }
 
-   .tempInformation{
-    width: 35rem;
-   }
+    .temp_form input[type="text"] {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fff;
+    }
 
-   .main_header_right{
-    align-items: center;
-   }
-   .carousel-size{
-    height: 65vw;
-    width: 90vw;
-    background-size: cover;
-    overflow: hidden;
+    .tempInformation {
+        width: 35rem;
+    }
+
+    .main_header_right {
+        align-items: center;
+    }
+
+    .carousel-size {
+        height: 65vw;
+        width: 90vw;
+        background-size: cover;
+        overflow: hidden;
+    }
+
 }
-    
-}
+
+/* @media (min-width:375px)and (max-width:480px) {
+    .temp_form input[type="submit"] {
+        padding: 2rem 2rem 2.6rem 2rem;
+        margin-right: -3rem;
+    }
+} */
